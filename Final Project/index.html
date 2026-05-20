@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Task 5: Navigation Bar Requirements -->
+    <nav class="navbar">
+        <div class="logo">TravelBloom</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter keyword (beach, temple, country)...">
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Main Layout Container -->
+    <div class="main-container">
+        
+        <!-- Results Panel (Dynamic output from JS) -->
+        <div id="resultsContainer" class="results-panel"></div>
+
+        <!-- Content Area -->
+        <div class="content-panel">
+            
+            <!-- Task 2: Home Section -->
+            <section id="home" class="section">
+                <h1>Welcome to TravelBloom</h1>
+                <p>Your ultimate destination for finding perfect getaways. Use our search tool to find exquisite beaches, historic temples, or stunning countries to plan your next journey smoothly.</p>
+            </section>
+
+            <!-- Task 3: About Us Section -->
+            <section id="about" class="section">
+                <h2>About Us</h2>
+                <p>TravelBloom is a global travel recommendation platform dedicated to bringing world wonders closer to you. Our mission is to simplify vacation planning by providing tailored destinations based on your core preferences.</p>
+                <h3>Team Guidance & Instructions</h3>
+                <p>Team members must ensure all fetched destination data is kept accurate, image URLs are highly responsive, and user query handling stays completely case-insensitive for smooth operation.</p>
+            </section>
+
+            <!-- Task 4: Contact Us Section -->
+            <section id="contact" class="section">
+                <h2>Contact Us</h2>
+                <p>Email: support@travelbloom.com | Phone: +27 11 555 0123</p>
+                <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            
+        </div>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
